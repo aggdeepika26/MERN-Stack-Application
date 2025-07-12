@@ -23,12 +23,20 @@ git clone https://github.com/DevOps-Playbbok/MERN-Stack-Application
 cd Helm
 ```
 
-### Install the Chart
+### Test the Chart in debug mode
+
+You can test the Helm chart using the debug mode:
+
+```bash
+helm upgrade --install wanderlast --dry-run --debug .
+```
+
+### Deploy the Chart 
 
 You can install the Helm chart using the following command:
 
 ```bash
-helm upgrade --install wanderlast --dry-run --debug .
+helm upgrade --install wanderlast .
 ```
 
 
