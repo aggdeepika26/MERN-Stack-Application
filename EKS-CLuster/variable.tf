@@ -17,8 +17,8 @@ variable "cluster_name" {
 variable "instance_types" {
   description = "List of instance types for the EKS node group"
   type        = list(string)
-  default     = ["t2.medium"]
-
+  # default     = ["t2.medium"]
+  default     = ["t3.micro"]
 }
 variable "azs" {
   description = "List of availability zones to use for the VPC"
